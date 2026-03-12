@@ -11,9 +11,8 @@ export function GlassCard({ children, className = "", hover = true, onClick }: G
   return (
     <div
       onClick={onClick}
-      className={`liquid-glass rounded-2xl ${
-        hover ? "liquid-glass-hover" : ""
-      } ${onClick ? "cursor-pointer" : ""} ${className}`}
+      className={`backdrop-blur-l bg-white/10 border-white/10 border-t rounded-2xl ${hover ? "liquid-glass-hover" : ""
+        } ${onClick ? "cursor-pointer" : ""} ${className}`}
     >
       {children}
     </div>
